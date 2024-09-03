@@ -4,9 +4,6 @@
     <!-- Navbar -->
      {{include('flashcards/navbar.html.twig')}}
 
-   <p><a class="btn btn-primary mx-2" href="{{ path('homepage') }}">Home</a></p>
-<p><a class="btn btn-primary mx-2" href="{{ path('flashcards_all') }}">Flashcards</a></p>
-
     <!-- Main Content -->
     <h1 class="text-center">Add a flashcard!</h1>
    
@@ -23,4 +20,10 @@
             </div>
             </div>
             </div>
+    <div style="text-align: center;">
+    <a class="btn btn-primary mx-2" href="{{ path('homepage') }}">Home</a></p>
+    </div>
+    <div style="text-align: center;">
+    <a class="btn btn-primary mx-2" href="{{ path('flashcards_all') }}">Flashcards</a></p>
+    </div>
 {% endblock %}
