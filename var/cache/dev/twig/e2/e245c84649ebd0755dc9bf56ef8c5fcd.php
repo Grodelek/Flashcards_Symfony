@@ -112,7 +112,7 @@ class __TwigTemplate_1ddb3301aea4ca16614bfdf8290f3005 extends Template
     <div style=\"text-align: center;\">
     <a class=\"btn btn-primary mx-2\" href=\"";
         // line 27
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("flashcards_all");
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cards_all");
         yield "\">Flashcards</a></p>
     </div>
 ";
@@ -177,7 +177,7 @@ class __TwigTemplate_1ddb3301aea4ca16614bfdf8290f3005 extends Template
     <a class=\"btn btn-primary mx-2\" href=\"{{ path('homepage') }}\">Home</a></p>
     </div>
     <div style=\"text-align: center;\">
-    <a class=\"btn btn-primary mx-2\" href=\"{{ path('flashcards_all') }}\">Flashcards</a></p>
+    <a class=\"btn btn-primary mx-2\" href=\"{{ path('cards_all') }}\">Flashcards</a></p>
     </div>
 {% endblock %}
 ", "flashcards/new.html.twig", "/home/grodel/Desktop/flashcards-php/templates/flashcards/new.html.twig");

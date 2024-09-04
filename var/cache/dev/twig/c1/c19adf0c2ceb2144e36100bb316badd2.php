@@ -13,7 +13,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* flashcards/home.html.twig */
+/* /flashcards/home.html.twig */
 class __TwigTemplate_8ada2448e0290a681d3d2a43fe2a0c39 extends Template
 {
     private $source;
@@ -40,12 +40,12 @@ class __TwigTemplate_8ada2448e0290a681d3d2a43fe2a0c39 extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "flashcards/home.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/flashcards/home.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "flashcards/home.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/flashcards/home.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "flashcards/home.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "/flashcards/home.html.twig", 1);
         yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -66,22 +66,19 @@ class __TwigTemplate_8ada2448e0290a681d3d2a43fe2a0c39 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        yield "    <!-- Navbar -->
-    ";
-        // line 5
+        yield "    ";
         yield Twig\Extension\CoreExtension::include($this->env, $context, "flashcards/navbar.html.twig");
         yield "
 
-    <!-- Main Content -->
     <div class=\"d-flex justify-content-center\">
    <a class=\"btn btn-primary btn-lg\" href=\"";
-        // line 9
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("flashcards_all");
+        // line 7
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cards_all");
         yield "\">Flashcards</a>
    <br>
    <a class=\"btn btn-primary btn-lg\" href=\"";
-        // line 11
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("flashcards_add");
+        // line 9
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cards_add");
         yield "\">Add Flashcard</a>
     </div>
 ";
@@ -99,7 +96,7 @@ class __TwigTemplate_8ada2448e0290a681d3d2a43fe2a0c39 extends Template
      */
     public function getTemplateName()
     {
-        return "flashcards/home.html.twig";
+        return "/flashcards/home.html.twig";
     }
 
     /**
@@ -115,7 +112,7 @@ class __TwigTemplate_8ada2448e0290a681d3d2a43fe2a0c39 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  84 => 11,  79 => 9,  72 => 5,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  81 => 9,  76 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -123,16 +120,14 @@ class __TwigTemplate_8ada2448e0290a681d3d2a43fe2a0c39 extends Template
         return new Source("{% extends \"base.html.twig\" %}
 
 {% block body %}
-    <!-- Navbar -->
     {{include('flashcards/navbar.html.twig')}}
 
-    <!-- Main Content -->
     <div class=\"d-flex justify-content-center\">
-   <a class=\"btn btn-primary btn-lg\" href=\"{{ path('flashcards_all') }}\">Flashcards</a>
+   <a class=\"btn btn-primary btn-lg\" href=\"{{ path('cards_all') }}\">Flashcards</a>
    <br>
-   <a class=\"btn btn-primary btn-lg\" href=\"{{ path('flashcards_add') }}\">Add Flashcard</a>
+   <a class=\"btn btn-primary btn-lg\" href=\"{{ path('cards_add') }}\">Add Flashcard</a>
     </div>
 {% endblock %}
-", "flashcards/home.html.twig", "/home/grodel/Desktop/flashcards-php/templates/flashcards/home.html.twig");
+", "/flashcards/home.html.twig", "/home/grodel/Desktop/flashcards-php/templates/flashcards/home.html.twig");
     }
 }

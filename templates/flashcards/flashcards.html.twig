@@ -1,33 +1,32 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <!-- Navbar -->
     {{ include('flashcards/navbar.html.twig') }}
 
-    <!-- Navigation Buttons -->
     <div class="container mt-4">
         <p>
             <a class="btn btn-primary mx-2" href="{{ path('homepage') }}">Home</a>
-            <a class="btn btn-primary mx-2" href="{{ path('flashcards_add') }}">Add Flashcard</a>
+            <a class="btn btn-primary mx-2" href="{{ path('cards_add') }}">Add Flashcard</a>
         </p>
 
-        <!-- Main Content -->
-        <div class="container mt-4">
-            <h1 class="text-center">All Flashcards!</h1>
-            <div class="row">
+        <h1 class="text-center">Flashcards</h1>
+        <div class="d-flex flex-column align-items-center mt-4"> <!-- Flex column and center alignment -->
+
                 {% for flashcard in flashcards %}
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ flashcard.topic }}</h5>
-                                <p class="card-text">{{ flashcard.answer }}</p>
-                            </div>
+                    <div class="card mb-4" > 
+                        <div class="card-body">
+                            <h5 class="card-title">{{ flashcard.topic }}</h5>
+                            <hr class="hr-new">
+                            <p class="card-text">{{ flashcard.answer }}</p>
+                            <a class="btn btn-danger" href="{{ path('cards_delete', { 'id': flashcard.id }) }}">Delete</a>
+                            <a class="btn btn-primary" href="{{ path('cards_update', { 'id': flashcard.id }) }}">Update</a>
+
                         </div>
                     </div>
                 {% else %}
                     <p class="text-center">No flashcards available.</p>
                 {% endfor %}
-            </div>
+
         </div>
     </div>
 {% endblock %}

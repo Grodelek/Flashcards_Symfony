@@ -1,3 +1,17 @@
 body {
     background-color: skyblue;
 }
+.card-body:hover{
+    background-color: rgb(205, 199, 199);
+}
+.card-title{
+    text-align: center;
+}
+.hr-new{
+    border-top: 1px solid rrgba(0, 0, 0, 0.581)
+}
+.card-body{
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+}

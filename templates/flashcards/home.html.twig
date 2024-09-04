@@ -1,13 +1,11 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <!-- Navbar -->
     {{include('flashcards/navbar.html.twig')}}
 
-    <!-- Main Content -->
     <div class="d-flex justify-content-center">
-   <a class="btn btn-primary btn-lg" href="{{ path('flashcards_all') }}">Flashcards</a>
+   <a class="btn btn-primary btn-lg" href="{{ path('cards_all') }}">Flashcards</a>
    <br>
-   <a class="btn btn-primary btn-lg" href="{{ path('flashcards_add') }}">Add Flashcard</a>
+   <a class="btn btn-primary btn-lg" href="{{ path('cards_add') }}">Add Flashcard</a>
     </div>
 {% endblock %}

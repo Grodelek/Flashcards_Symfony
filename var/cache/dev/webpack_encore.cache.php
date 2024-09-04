@@ -12,12 +12,12 @@ return [[
     'entrypoints' => [
         'app' => [
             'js' => [
-                '/build/runtime.8ab7f0c8.js',
-                '/build/860.3d9cb7af.js',
-                '/build/app.d4c3246f.js',
+                '/build/runtime.js',
+                '/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_symfony_ux-turbo_dist-714787.js',
+                '/build/app.js',
             ],
             'css' => [
-                '/build/app.d9309bd8.css',
+                '/build/app.css',
             ],
         ],
     ],
